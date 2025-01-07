@@ -1,0 +1,1 @@
+# ResenhandoDirei_React-ReactNative
