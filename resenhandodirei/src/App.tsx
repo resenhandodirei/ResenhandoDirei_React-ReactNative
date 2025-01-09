@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import AnimationWord from './src/components/Animations/AnimationWord/AnimationWord';
+import AnimationWord from './components/Animations/AnimationWord/AnimationWord';
 import React from 'react';
 
 
