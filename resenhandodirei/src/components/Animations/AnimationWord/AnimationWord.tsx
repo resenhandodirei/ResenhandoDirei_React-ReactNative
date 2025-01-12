@@ -47,7 +47,7 @@ const AnimatedWord: React.FC = () => {
         transition={{ duration: 1, delay: 5 }} // Appear after main word
         style={subtitleStyle}
       >
-        Porque o futuro começa com um jovem que acredita.
+        Porque o futuro começa com um jovem que acredita
       </motion.div>
     </div>
   );

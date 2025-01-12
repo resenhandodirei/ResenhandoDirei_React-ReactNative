@@ -10,6 +10,8 @@ export const containerStyle: CSSProperties = {
   fontWeight: 'bold',
   textAlign: 'center',
   lineHeight: '1',
+  fontFamily: 'Montserrat, sans-serif',
+  letterSpacing: '10px',
 };
 
 export const letterStyle: CSSProperties = {
@@ -24,4 +26,5 @@ export const subtitleStyle: CSSProperties = {
   fontWeight: 'normal',
   color: '#555', // Subtle gray color
   textAlign: 'center',
+  
 };

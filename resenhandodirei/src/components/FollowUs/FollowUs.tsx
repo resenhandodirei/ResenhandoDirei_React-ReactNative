@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Container,
   NewsletterBox,
@@ -9,6 +9,15 @@ import {
 } from './FollowUsStyles';
 
 const FollowUs: React.FC = () => {
+  const [whatsapp, setWhatsapp] = useState('');
+
+  const handleWhatsappChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    if (/^\d*$/.test(value)) {
+      setWhatsapp(value);
+    }
+  };
+
   return (
     <Container>
       <NewsletterBox>
@@ -19,7 +28,13 @@ const FollowUs: React.FC = () => {
         <Form>
           <Input type="text" placeholder="Nome" required />
           <Input type="email" placeholder="E-mail" required />
-          <Input type="tel" placeholder="WhatsApp" required />
+          <Input
+            type="tel"
+            placeholder="WhatsApp"
+            value={whatsapp}
+            onChange={handleWhatsappChange}
+            required
+          />
           <Button type="submit">Enviar</Button>
         </Form>
       </NewsletterBox>
