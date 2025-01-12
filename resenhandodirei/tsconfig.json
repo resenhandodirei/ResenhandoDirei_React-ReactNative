@@ -9,5 +9,5 @@
     "strict": true,
     "esModuleInterop": true
   },
-  "include": ["src", "App.tsx"]
+  "include": ["src", "App.tsx", "webpack.config.js", "index.d.ts"],
 }
