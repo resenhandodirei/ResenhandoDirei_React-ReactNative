@@ -7,9 +7,10 @@ export const styles = StyleSheet.create({
     justifyContent: 'center', // Alinha as imagens no centro
   },
   image: {
-    width: 150, // Ajuste da largura para ser mais apropriado em dispositivos móveis
-    height: 200, // Ajuste da altura
     margin: 5, // Adiciona margem entre as imagens
+    width: 400,
+    height: 500,
+    borderRadius: 10,
   },
   text: {
     color: 'white', // Cor do texto para quando a imagem não for encontrada
