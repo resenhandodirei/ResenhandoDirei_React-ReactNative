@@ -12,7 +12,23 @@ import img7 from '../../../assets/7.jpg';
 import img8 from '../../../assets/8.jpg';
 import img9 from '../../../assets/9.jpg';
 import img10 from '../../../assets/10.jpg';
-import img11 from '../../../assets/11.jpg';
+import img11 from '../../../assets/11.jpg'; 
+
+{/*
+const img1 = require('../../../assets/1.jpg');
+const img2 = require('../../../assets/2.jpg');
+const img3 = require('../../../assets/3.jpg');
+const img4 = require('../../../assets/4.jpg');
+const img5 = require('../../../assets/5.jpg');
+const img6 = require('../../../assets/6.jpg');
+const img7 = require('../../../assets/7.jpg');
+const img8 = require('../../../assets/8.jpg');
+const img9 = require('../../../assets/9.jpg');
+const img10 = require('../../../assets/10.jpg');
+const img11 = require('../../../assets/11.jpg');*/}
+
+
+
 
 const Feedbacks: React.FC = () => {
   return (
