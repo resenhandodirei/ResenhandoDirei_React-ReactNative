@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Title } from './FeedbacksStyles';
+import { Container, Title, ImageContainer } from './FeedbacksStyles';
 import { Image } from '../Images/Image';
 
 // Lista de IDs das imagens
@@ -9,12 +9,12 @@ const Feedbacks: React.FC = () => {
   return (
     <Container>
       <Title>Feedbacks de quem já foi meu aluno</Title>
-      <div>
+      <ImageContainer>
         {/* Mapeia os IDs das imagens e renderiza o componente Image para cada um */}
         {imageIds.map((id) => (
           <Image key={id} id={id} />
         ))}
-      </div>
+      </ImageContainer>
     </Container>
   );
 };

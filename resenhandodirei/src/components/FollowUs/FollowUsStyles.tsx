@@ -7,9 +7,11 @@ export const Container = styled.div`
   padding: 20px;
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Assegura que os elementos principais sejam empilhados verticalmente */
+  justify-content: flex-start;
   align-items: center;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
 `;
 
@@ -20,9 +22,10 @@ export const NewsletterBox = styled.div`
   border-radius: 15px;
   position: relative;
   text-align: center;
-  width: 700px;
-  height: 320px;
-
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  min-height: 320px;
 `;
 
 export const TitleBox = styled.div`
@@ -50,7 +53,8 @@ export const Input = styled.input`
   padding: 10px;
   border: none;
   border-radius: 5px;
-  width: 96%;
+  width: 100%;
+  box-sizing: border-box;
 `;
 
 export const Button = styled.button`
@@ -63,9 +67,16 @@ export const Button = styled.button`
   text-transform: uppercase;
   width: 100%;
 
-  
-
   &:hover {
     background-color: #ddd;
   }
+`;
+
+// Adicione uma seção específica para o container de imagens se necessário
+export const ImageContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap; /* Permite que as imagens "quebrem" para a linha seguinte */
+  justify-content: center; /* Centraliza as imagens horizontalmente */
+  gap: 10px; /* Espaçamento entre as imagens */
+  margin-top: 20px; /* Espaço superior opcional */
 `;
