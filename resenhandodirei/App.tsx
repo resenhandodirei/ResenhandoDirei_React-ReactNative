@@ -7,6 +7,7 @@ import Feedbacks from './src/components/Feedbacks/Feedbacks';
 import FollowUs from './src/components/FollowUs/FollowUs';
 import { LinearGradient } from 'expo-linear-gradient';
 import Footer from './src/components/Footer/Footer';
+import Header from './src/components/Header/Header';
 
 export default function App() {
   return (
@@ -14,6 +15,8 @@ export default function App() {
       colors={['#C72F64', '#41247C']} // Adicione as cores desejadas aqui
       style={styles.container}
     >
+
+      <Header />
       <AnimationWord />
       <Feedbacks />
       <FollowUs />
