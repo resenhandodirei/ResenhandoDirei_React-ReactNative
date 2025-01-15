@@ -6,6 +6,7 @@ import React from 'react';
 import Feedbacks from './src/components/Feedbacks/Feedbacks';
 import FollowUs from './src/components/FollowUs/FollowUs';
 import { LinearGradient } from 'expo-linear-gradient';
+import Footer from './src/components/Footer/Footer';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <AnimationWord />
       <Feedbacks />
       <FollowUs />
+      <Footer />
     </LinearGradient>
   );
 }
