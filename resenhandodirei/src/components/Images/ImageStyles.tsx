@@ -5,8 +5,8 @@ export const styles = StyleSheet.create({
     margin: 5, // Espaço entre as imagens
   },
   image: {
-    width: 150, // Largura das imagens
-    height: 200, // Altura das imagens
+    width: 250, // Largura das imagens
+    height: 250, // Altura das imagens
     borderRadius: 10, // Bordas arredondadas
   },
   textContainer: {

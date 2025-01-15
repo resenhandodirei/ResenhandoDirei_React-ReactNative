@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: #fff;
   width: 90%;
   max-width: 600px;
   padding: 20px;
@@ -14,7 +13,7 @@ export const Container = styled.div`
 
 export const Title = styled.h2`
   font-size: 24px;
-  color: #333;
+  color: #FFD0D0;
   margin-bottom: 20px;
 `;
 

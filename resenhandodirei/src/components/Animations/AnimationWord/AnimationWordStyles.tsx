@@ -12,6 +12,7 @@ export const containerStyle: CSSProperties = {
   lineHeight: '1',
   fontFamily: 'Montserrat, sans-serif',
   letterSpacing: '10px',
+  color: '#FFD0D0', 
 };
 
 export const letterStyle: CSSProperties = {
@@ -24,7 +25,7 @@ export const subtitleStyle: CSSProperties = {
   marginTop: '20px',
   fontSize: '1.5rem', // Smaller font size for subtitle
   fontWeight: 'normal',
-  color: '#555', // Subtle gray color
+  color: '#FFD0D0', // Subtle gray color
   textAlign: 'center',
   
 };
