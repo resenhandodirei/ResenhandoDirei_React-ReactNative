@@ -10,8 +10,8 @@ const Header = () => {
   return (
     <View style={styles.container}>
       <View style={styles.leftContainer}>
-        <Text style={styles.title}>Resenhando Direito</Text>
-        <Text style={styles.slogan}>Sua fonte de resenhas jurídicas</Text>
+        <Text style={styles.title}>Resenhando Direi</Text>
+        <Text style={styles.slogan}>Não é sobre regras, é sobre fazer a sua história.</Text>
       </View>
       <View style={styles.navContainer}>
         <TouchableOpacity onPress={() => navigateTo('https://www.example.com/home')}>
