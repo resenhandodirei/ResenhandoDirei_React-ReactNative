@@ -2,16 +2,16 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {
-    width: '100%', // Garantir que o header ocupe toda a largura
-    backgroundColor: '#41247C',
+    width: '100%',
+    backgroundColor: 'pink', // Temporário para visualização
     paddingVertical: 20,
     paddingHorizontal: 20,
-    flexDirection: 'row', // Distribui os elementos horizontalmente
-    justifyContent: 'space-between', // Distancia título e navegação
-    alignItems: 'center', // Alinha verticalmente
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
   leftContainer: {
-    // Contêiner para o título e slogan, alinhado à esquerda
+    flex: 1,
   },
   title: {
     fontSize: 24,
@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
   },
   navContainer: {
     flexDirection: 'row',
-    // Os links de navegação são alinhados à direita automaticamente
+    alignItems: 'center',
   },
   navLink: {
     fontSize: 16,
