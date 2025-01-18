@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
   },
   divider: {
     height: 1,
-    backgroundColor: '#FFD0D0',
+    backgroundColor: '#FFF',
     width: '100%', // A linha de divisão ocupa toda a largura
     marginBottom: 15,
   },

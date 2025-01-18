@@ -40,7 +40,7 @@ export const TitleBox = styled.div`
   height: auto;
   padding: 20px; /* Adiciona espaçamento interno */
   box-sizing: border-box;
-  margin-top: 20px;
+  margin-top: 8px;
 `;
 
 export const Form = styled.form`
