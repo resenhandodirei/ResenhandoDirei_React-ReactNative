@@ -12,6 +12,7 @@ import FollowUs from './src/components/FollowUs/FollowUs';
 import { LinearGradient } from 'expo-linear-gradient';
 import Footer from './src/components/Footer/Footer';
 import Header from './src/components/Header/Header';
+import About from './src/pages/About/About';
 
 const Stack = createNativeStackNavigator();
 
@@ -31,7 +32,7 @@ function RootStack() {
 export default function Home() {
   return (
     <LinearGradient
-      colors={['#C72F64', '#41247C']} // Adicione as cores desejadas aqui
+      colors={['#C72F64', '#41247C']} 
       style={styles.container}
     >
       <Header />
