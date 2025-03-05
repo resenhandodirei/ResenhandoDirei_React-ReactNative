@@ -1,11 +1,11 @@
 
 import React from 'react';
 import { View, Text } from 'react-native';
+import { StyleSheet } from 'react-native';
 
-import styles from './AboutStyles';
 
 
-const About: React.FC = () => {
+export default function About( { navigation } : any) {
 
   return (
 
@@ -19,6 +19,13 @@ const About: React.FC = () => {
 
 };
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
 
 
-export default About;
+
