@@ -4,11 +4,11 @@ const { Navigator, Screen } = createStackNavigator();
 
 import Home from '../pages/Home/Home';
 import About from '../pages/About/About';
-import { Contact } from '../pages/Contact/Contact';
+import Contact from '../pages/Contact/Contact';
 
 export function StackRoutes() {
   return (
-    <Navigator>
+    <Navigator initialRouteName="home">
       <Screen 
             name="home" 
             component={Home} 

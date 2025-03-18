@@ -1,22 +1,11 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Linking } from 'react-native';
-//import { NavigationContainer } from '@react-navigation/native';
-
+import { NavigationContainer } from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 
 import { styles } from './HeaderStyless';
-
-function Header( { navigation } : any) {
-  function navToHome() {
-    navigation.navigate('home');
-  }
-
-  function navToAbout() {
-    navigation.navigate('about');
-  }
-
-  function navToContact() {
-    navigation.navigate('contact');
-  }
+export default function Header() {
+  const navigation = useNavigation(); // Obtendo a instância de navegação
 
   return (  
     <View style={styles.container}>
@@ -24,21 +13,18 @@ function Header( { navigation } : any) {
         <Text style={styles.title}>Resenhando Direi</Text>
         <Text style={styles.slogan}>Não é sobre regras, é sobre fazer a sua história.</Text>
       </View>
+
       <View style={styles.navContainer}>
-        <TouchableOpacity onPress={navToHome}>
+        <TouchableOpacity onPress={() => navigation.navigate('home')}>
           <Text style={styles.navLink}>Home</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={navToAbout}>
+        <TouchableOpacity onPress={() => navigation.navigate('about')}>
           <Text style={styles.navLink}>Sobre</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={navToContact}>
+        <TouchableOpacity onPress={() => navigation.navigate('contact')}>
           <Text style={styles.navLink}>Contato</Text>
         </TouchableOpacity>
       </View>
     </View>
-
-
   );
-};
-
-export default Header;
+}
